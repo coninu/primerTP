@@ -1,0 +1,15 @@
+/* 
+font-family: "IBM Plex Mono", monospace;
+font-family: "Indie Flower", cursive;
+*/
+
+header {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    font-family: "Indie Flower", cursive;
+    font-size: 40px;
+}
