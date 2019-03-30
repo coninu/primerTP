@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: "IBM Plex Mono", monospace; }
+
+header {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center; }
+  header .title {
+    font-family: "Indie Flower", cursive;
+    font-size: 35px;
+    display: block;
+    color: #fa7855;
+    padding: 5px;
+    margin: 10px 0; }
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px 10px 0; }
+  nav ul li a {
+    color: #9b9089;
+    font-size: 13px;
+    transition: 0.3s; }
+    nav ul li a:hover {
+      color: #fa7855; }
+  nav ul li .fas.fa-caret-down {
+    padding: 0 0 0 10px; }
+  nav ul li .meal-menu:hover .meal-list {
+    display: block; }
+  nav ul li .meal-menu .meal-list {
+    display: none;
+    position: fixed;
+    width: 75px;
+    color: #9b9089;
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 5px; }
+    nav ul li .meal-menu .meal-list .meal-item:hover {
+      color: #fa7855; }
+
+.carrousel {
+  display: flex;
+  justify-content: space-between; }
+
+.first-recipe {
+  width: 300px;
+  height: 450px;
+  position: relative; }
+  .first-recipe .img-1-details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(239, 4, 4, 0.4);
+    color: white;
+    padding: 20px; }
+    .first-recipe .img-1-details .info {
+      font-size: 10px;
+      padding: 15px 0 15px 0; }
+      .first-recipe .img-1-details .info span {
+        border-right: solid 1px white;
+        padding-right: 10px;
+        margin-right: 5px; }
+  .first-recipe:hover .img-1-details {
+    display: block; }
+
+.second-recipe {
+  width: 300px;
+  height: 450px;
+  position: relative; }
+  .second-recipe .img-2-details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(239, 4, 4, 0.4);
+    color: white;
+    padding: 20px; }
+    .second-recipe .img-2-details .info {
+      font-size: 10px;
+      padding: 15px 0 15px 0; }
+      .second-recipe .img-2-details .info span {
+        border-right: solid 1px white;
+        padding-right: 10px;
+        margin-right: 5px; }
+  .second-recipe:hover .img-2-details {
+    display: block; }
+
+.third-recipe {
+  width: 300px;
+  height: 450px;
+  position: relative; }
+  .third-recipe .img-3-details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(239, 4, 4, 0.4);
+    color: white;
+    padding: 20px; }
+    .third-recipe .img-3-details .info {
+      font-size: 10px;
+      padding: 15px 0 15px 0; }
+      .third-recipe .img-3-details .info span {
+        border-right: solid 1px white;
+        padding-right: 10px;
+        margin-right: 5px; }
+  .third-recipe:hover .img-3-details {
+    display: block; }
+
+.fourth-recipe {
+  width: 300px;
+  height: 450px;
+  position: relative; }
+  .fourth-recipe .img-4-details {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(239, 4, 4, 0.4);
+    color: white;
+    padding: 20px; }
+    .fourth-recipe .img-4-details .info {
+      font-size: 10px;
+      padding: 15px 0 15px 0; }
+      .fourth-recipe .img-4-details .info span {
+        border-right: solid 1px white;
+        padding-right: 10px;
+        margin-right: 5px; }
+  .fourth-recipe:hover .img-4-details {
+    display: block; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 0; }
+
+.secondary-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .secondary-menu .meals {
+    position: relative; }
+    .secondary-menu .meals img {
+      border-radius: 15%; }
+    .secondary-menu .meals a {
+      padding: 8px 70px;
+      border-radius: 10%;
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 42%;
+      left: 23%;
+      transition: 0.3s; }
+      .secondary-menu .meals a:hover {
+        background-color: #ff6a39; }
+  .secondary-menu .recipes {
+    position: relative; }
+    .secondary-menu .recipes img {
+      border-radius: 15%; }
+    .secondary-menu .recipes a {
+      padding: 8px 70px;
+      border-radius: 10%;
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 42%;
+      left: 23%;
+      transition: 0.3s; }
+      .secondary-menu .recipes a:hover {
+        background-color: #ff6a39; }
+  .secondary-menu .exotics {
+    position: relative; }
+    .secondary-menu .exotics img {
+      border-radius: 15%; }
+    .secondary-menu .exotics a {
+      padding: 8px 70px;
+      border-radius: 10%;
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 42%;
+      left: 23%;
+      transition: 0.3s; }
+      .secondary-menu .exotics a:hover {
+        background-color: #ff6a39; }
