@@ -1,0 +1,224 @@
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+header {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+
+    .title {
+        font-family: "Indie Flower", cursive;
+        font-size: 35px;
+        display: block;
+        color: $orange;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    nav {
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 25px 10px 0;
+
+                a {
+                    color: $grey;
+                    font-size: 13px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+
+                .fas.fa-caret-down {
+                    padding: 0 0 0 10px;
+                }
+
+                .hover-menu {
+                    &:hover .hover-list {
+                        display: block;
+                    }
+
+                    // no funciona
+                }
+
+                .hover-list {
+                    display: none;
+                    position: absolute;
+                    z-index: 1;
+                    width: 75px;
+                    color: $grey;
+                    background-color: #f8f8f8;
+                    text-align: left;
+                    padding: 5px;
+
+                    .hover-item:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carrousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-recipe {
+    @include recipeconfig;
+
+    .img-1-details {
+        @include imagedetails;
+
+        .info {
+            font-size: 10px;
+            padding: 15px 0 15px 0;
+
+            span {
+                border-right: solid 1px white;
+                padding-right: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:hover .img-1-details {
+        display: block;
+    }
+}
+
+.second-recipe {
+    @include recipeconfig;
+
+    .img-2-details {
+        @include imagedetails;
+
+        .info {
+            font-size: 10px;
+            padding: 15px 0 15px 0;
+
+            span {
+                border-right: solid 1px white;
+                padding-right: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:hover .img-2-details {
+        display: block;
+    }
+}
+
+.third-recipe {
+    @include recipeconfig;
+
+    .img-3-details {
+        @include imagedetails;
+
+        .info {
+            font-size: 10px;
+            padding: 15px 0 15px 0;
+
+            span {
+                border-right: solid 1px white;
+                padding-right: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:hover .img-3-details {
+        display: block;
+    }
+}
+
+.fourth-recipe {
+    @include recipeconfig;
+
+    .img-4-details {
+        @include imagedetails;
+
+        .info {
+            font-size: 10px;
+            padding: 15px 0 15px 0;
+
+            span {
+                border-right: solid 1px white;
+                padding-right: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:hover .img-4-details {
+        display: block;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.secondary-menu {
+    display: flex;
+    justify-content: space-between;
+
+    .meals {
+        position: relative;
+
+        img {
+            border-radius: 15%;
+        }
+
+        a {
+            @include anchorconfig;
+        }
+    }
+
+    .recipes {
+        position: relative;
+
+        img {
+            border-radius: 15%;
+        }
+
+        a {
+            @include anchorconfig;
+        }
+    }
+
+    .exotics {
+        position: relative;
+
+        img {
+            border-radius: 15%;
+        }
+
+        a {
+            @include anchorconfig;
+        }
+    }
+}
