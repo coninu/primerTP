@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+header {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+header .title {
+  font-family: "Indie Flower", cursive;
+  font-size: 35px;
+  display: block;
+  color: #fa7855;
+  padding: 5px;
+  margin: 10px 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 25px 10px 0;
+}
+header nav ul li a {
+  color: #9b9089;
+  font-size: 13px;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  color: #fa7855;
+}
+header nav ul li .fas.fa-caret-down {
+  padding: 0 0 0 10px;
+}
+header nav ul li .hover-menu:hover .hover-list {
+  display: inline-block;
+}
+header nav ul li .hover-list {
+  display: none;
+  position: fixed;
+  width: 75px;
+  color: #9b9089;
+  background-color: #f8f8f8;
+  text-align: left;
+  padding: 5px;
+}
+header nav ul li .hover-list .hover-item:hover {
+  color: #fa7855;
+}
+
+.carrousel {
+  display: flex;
+  justify-content: space-between;
+}
+.carrousel .first-recipe {
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+.carrousel .first-recipe .img-1-details {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(239, 4, 4, 0.4);
+  color: white;
+  padding: 20px;
+}
+.carrousel .first-recipe .img-1-details .info {
+  font-size: 10px;
+  padding: 15px 0 15px 0;
+}
+.carrousel .first-recipe .img-1-details .info span {
+  border-right: solid 1px white;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+.carrousel .first-recipe:hover .img-1-details {
+  display: block;
+}
