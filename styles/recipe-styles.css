@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+header {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+header .title {
+  font-family: "Indie Flower", cursive;
+  font-size: 35px;
+  display: block;
+  color: #fa7855;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px 10px 0;
+}
+nav ul li a {
+  color: #9b9089;
+  font-size: 13px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #fa7855;
+}
+
+.meal-menu .fas.fa-caret-down {
+  padding: 0 0 0 10px;
+}
+.meal-menu:hover .meal-list {
+  display: block;
+  z-index: 1;
+}
+
+.meal-list {
+  display: none;
+  position: absolute;
+  width: 75px;
+  color: #9b9089;
+  background-color: #f8f8f8;
+  text-align: left;
+  padding: 5px;
+}
+.meal-list .meal-item:hover {
+  color: #fa7855;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.path {
+  margin-left: 10%;
+}
+.path ul {
+  display: flex;
+}
+.path ul li {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.path ul li a {
+  text-decoration: none;
+  color: black;
+}
+.path ul li a span {
+  color: #9b9089;
+}
+.path ul li .fas.fa-home {
+  margin: 0 8px 0 0;
+}
+
+.container {
+  width: 60%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 0;
+}
