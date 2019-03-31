@@ -32,20 +32,23 @@ nav ul li {
     transition: 0.3s; }
     nav ul li a:hover {
       color: #fa7855; }
-  nav ul li .fas.fa-caret-down {
-    padding: 0 0 0 10px; }
-  nav ul li .meal-menu:hover .meal-list {
-    display: block; }
-  nav ul li .meal-menu .meal-list {
-    display: none;
-    position: fixed;
-    width: 75px;
-    color: #9b9089;
-    background-color: #f8f8f8;
-    text-align: left;
-    padding: 5px; }
-    nav ul li .meal-menu .meal-list .meal-item:hover {
-      color: #fa7855; }
+
+.meal-menu .fas.fa-caret-down {
+  padding: 0 0 0 10px; }
+.meal-menu:hover .meal-list {
+  display: block;
+  z-index: 1; }
+
+.meal-list {
+  display: none;
+  position: absolute;
+  width: 75px;
+  color: #9b9089;
+  background-color: #f8f8f8;
+  text-align: left;
+  padding: 5px; }
+  .meal-list .meal-item:hover {
+    color: #fa7855; }
 
 .carrousel {
   display: flex;
@@ -154,44 +157,53 @@ nav ul li {
     position: relative; }
     .secondary-menu .meals img {
       border-radius: 15%; }
-    .secondary-menu .meals a {
-      padding: 8px 70px;
-      border-radius: 10%;
-      background-color: white;
+    .secondary-menu .meals .meals-bttn {
+      background: white;
       color: black;
+      display: block;
+      padding: 10px 10px;
+      text-align: center;
+      width: 180px;
+      border-radius: 20px;
       position: absolute;
-      top: 42%;
-      left: 23%;
+      top: calc(50% - 21px);
+      left: calc(50% - 100px);
       transition: 0.3s; }
-      .secondary-menu .meals a:hover {
-        background-color: #ff6a39; }
+      .secondary-menu .meals .meals-bttn:hover {
+        background-color: #fa7855; }
   .secondary-menu .recipes {
     position: relative; }
     .secondary-menu .recipes img {
       border-radius: 15%; }
-    .secondary-menu .recipes a {
-      padding: 8px 70px;
-      border-radius: 10%;
-      background-color: white;
+    .secondary-menu .recipes .recipes-bttn {
+      background: white;
       color: black;
+      display: block;
+      padding: 10px 10px;
+      text-align: center;
+      width: 180px;
+      border-radius: 20px;
       position: absolute;
-      top: 42%;
-      left: 23%;
+      top: calc(50% - 21px);
+      left: calc(50% - 100px);
       transition: 0.3s; }
-      .secondary-menu .recipes a:hover {
-        background-color: #ff6a39; }
+      .secondary-menu .recipes .recipes-bttn:hover {
+        background-color: #fa7855; }
   .secondary-menu .exotics {
     position: relative; }
     .secondary-menu .exotics img {
       border-radius: 15%; }
-    .secondary-menu .exotics a {
-      padding: 8px 70px;
-      border-radius: 10%;
-      background-color: white;
+    .secondary-menu .exotics .exotics-bttn {
+      background: white;
       color: black;
+      display: block;
+      padding: 10px 10px;
+      text-align: center;
+      width: 180px;
+      border-radius: 20px;
       position: absolute;
-      top: 42%;
-      left: 23%;
+      top: calc(50% - 21px);
+      left: calc(50% - 100px);
       transition: 0.3s; }
-      .secondary-menu .exotics a:hover {
-        background-color: #ff6a39; }
+      .secondary-menu .exotics .exotics-bttn:hover {
+        background-color: #fa7855; }

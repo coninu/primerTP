@@ -46,32 +46,34 @@ nav {
                     color: $orange;
                 }
             }
-
-            .fas.fa-caret-down {
-                padding: 0 0 0 10px;
-            }
-
-            .meal-menu {
-                &:hover .meal-list {
-                    display: block;
-                } // no funciona
-
-            .meal-list {
-                display: none;
-                position: fixed;
-                width: 75px;
-                color: $grey;
-                background-color: #f8f8f8;
-                text-align: left;
-                padding: 5px;
-
-                .meal-item:hover {
-                    color: $orange;
-                }
-            }
         }
     }
 }
+
+
+.meal-menu {
+    .fas.fa-caret-down {
+        padding: 0 0 0 10px;
+    }
+
+    &:hover .meal-list {
+        display: block;
+        z-index: 1;
+    }
+}
+
+.meal-list {
+    display: none;
+    position: absolute;
+    width: 75px;
+    color: $grey;
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 5px;
+
+    .meal-item:hover {
+        color: $orange;
+    }
 }
 
 .carrousel {
@@ -191,7 +193,7 @@ nav {
             border-radius: 15%;
         }
 
-        a {
+        .meals-bttn {
             @include anchorconfig;
         }
     }
@@ -203,7 +205,7 @@ nav {
             border-radius: 15%;
         }
 
-        a {
+        .recipes-bttn {
             @include anchorconfig;
         }
     }
@@ -215,8 +217,10 @@ nav {
             border-radius: 15%;
         }
 
-        a {
+        .exotics-bttn {
             @include anchorconfig;
         }
     }
 }
+
+//* FIN PARTE MARINA *//
