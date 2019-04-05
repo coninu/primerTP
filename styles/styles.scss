@@ -83,6 +83,9 @@ nav {
 
 .first-recipe {
     @include recipeconfig;
+    .hover-info {
+        transition: all 0.5s ease-in-out;
+    }
 
     .img-1-details {
         @include imagedetails;
@@ -188,6 +191,7 @@ nav {
 
     .meals {
         position: relative;
+        width: 33%;
 
         img {
             border-radius: 15%;
@@ -200,6 +204,7 @@ nav {
 
     .recipes {
         position: relative;
+        width: 33%;
 
         img {
             border-radius: 15%;
@@ -212,6 +217,7 @@ nav {
 
     .exotics {
         position: relative;
+        width: 33%;
 
         img {
             border-radius: 15%;

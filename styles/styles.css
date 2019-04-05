@@ -58,6 +58,8 @@ nav ul li {
   width: 300px;
   height: 450px;
   position: relative; }
+  .first-recipe .hover-info {
+    transition: all 0.5s ease-in-out; }
   .first-recipe .img-1-details {
     display: none;
     position: absolute;
@@ -65,7 +67,8 @@ nav ul li {
     left: 0;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    top: 65%; }
     .first-recipe .img-1-details .info {
       font-size: 10px;
       padding: 15px 0 15px 0; }
@@ -87,7 +90,8 @@ nav ul li {
     left: 0;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    top: 65%; }
     .second-recipe .img-2-details .info {
       font-size: 10px;
       padding: 15px 0 15px 0; }
@@ -109,7 +113,8 @@ nav ul li {
     left: 0;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    top: 65%; }
     .third-recipe .img-3-details .info {
       font-size: 10px;
       padding: 15px 0 15px 0; }
@@ -131,7 +136,8 @@ nav ul li {
     left: 0;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    top: 65%; }
     .fourth-recipe .img-4-details .info {
       font-size: 10px;
       padding: 15px 0 15px 0; }
@@ -154,7 +160,8 @@ nav ul li {
   justify-content: space-between;
   margin-bottom: 20px; }
   .secondary-menu .meals {
-    position: relative; }
+    position: relative;
+    width: 33%; }
     .secondary-menu .meals img {
       border-radius: 15%; }
     .secondary-menu .meals .meals-bttn {
@@ -172,7 +179,8 @@ nav ul li {
       .secondary-menu .meals .meals-bttn:hover {
         background-color: #fa7855; }
   .secondary-menu .recipes {
-    position: relative; }
+    position: relative;
+    width: 33%; }
     .secondary-menu .recipes img {
       border-radius: 15%; }
     .secondary-menu .recipes .recipes-bttn {
@@ -190,7 +198,8 @@ nav ul li {
       .secondary-menu .recipes .recipes-bttn:hover {
         background-color: #fa7855; }
   .secondary-menu .exotics {
-    position: relative; }
+    position: relative;
+    width: 33%; }
     .secondary-menu .exotics img {
       border-radius: 15%; }
     .secondary-menu .exotics .exotics-bttn {
