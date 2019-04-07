@@ -16,24 +16,35 @@
     <header>
         <a href="../primerTP/index.html" class="title">Mi Blog de Cocina</a>
         <nav>
-            <ul>
-                <li><a href="../primerTP/index.html">HOME</a></li>
-                <li class="meal-menu"><a href="#">PLATOS<i class="fas fa-caret-down"></i></a>
-                    <ul class="meal-list">
-                        <li class="meal-item"><a href="../primerTP/recipe.html">Ensalada</a></li>
-                        <li class="meal-item"><a href="#">Carne</a></li>
-                        <li class="meal-item"><a href="#">Helado</a></li>
+            <div class="mobile-menu">
+                <a href="#" class="main"><span><i class="fas fa-bars"></i>MENU</span>
+                    <ul class="mobile-menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li>PLATOS</li>
+                        <li>SOBRE MI</li>
+                        <li>CONTACTOS</li>
                     </ul>
-                </li>
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
+                </a>
+            </div>
+            <div class="desktop-menu">
+                <ul>
+                    <li><a href="../primerTP/index.html">HOME</a></li>
+                    <li class="meal-menu"><a href="#">PLATOS<i class="fas fa-caret-down"></i></a>
+                        <ul class="meal-list">
+                            <li class="meal-item"><a href="../primerTP/recipe.html">Ensalada</a></li>
+                            <li class="meal-item"><a href="#">Carne</a></li>
+                            <li class="meal-item"><a href="#">Helado</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOBRE MI</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="carrousel">
         <div class="first-recipe">
-            <a href="../primerTP/recipe.html" class="hover-info"><img src="images/img-1.jpg" width="300px" /></a>
-            <a href="../primerTP/recipe.html">
+            <a href="../primerTP/recipe.html" class="hover-info"><img src="images/img-1.jpg" />
                 <div class="img-1-details">
                     <p class="info"><span>Mayo 17, 2017</span> 5 comentarios</p>
                     <p class="desc">"Los mejores tacos del país, en pocos pasos."</p>
@@ -41,8 +52,7 @@
             </a>
         </div>
         <div class="second-recipe">
-            <a href="#"><img src="images/img-2.jpg" width="300px" /></a>
-            <a href="#">
+            <a href="#" class="hover-info"><img src="images/img-2.jpg" />
                 <div class="img-2-details">
                     <p class="info"><span>Mayo 17, 2017</span> 5 comentarios</p>
                     <p class="desc">"Los mejores tacos del país, en pocos pasos."</p>
@@ -50,8 +60,7 @@
             </a>
         </div>
         <div class="third-recipe">
-            <a href="#"><img src="images/img-3.jpg" width="300px" /></a>
-            <a href="#">
+            <a href="#" class="hover-info"><img src="images/img-3.jpg" />
                 <div class="img-3-details">
                     <p class="info"><span>Mayo 17, 2017</span> 5 comentarios</p>
                     <p class="desc">"Los mejores tacos del país, en pocos pasos."</p>
@@ -59,8 +68,7 @@
             </a>
         </div>
         <div class="fourth-recipe">
-            <a href="#"><img src="images/img-4.jpg" width="300px" /></a>
-            <a href="#">
+            <a href="#" class="hover-info"><img src="images/img-4.jpg" />
                 <div class="img-4-details">
                     <p class="info"><span>Mayo 17, 2017</span> 5 comentarios</p>
                     <p class="desc">"Los mejores tacos del país, en pocos pasos."</p>
@@ -72,20 +80,26 @@
     <div class="container">
         <section class="secondary-menu">
             <div class="meals">
-                <img class="secondary-menu-img" src="images/platos.jpeg" width="95%" height="243px"/>
-                <a class="meals-bttn" href="#">PLATOS</a>
+                <a href="#" class="meals-hover">
+                    <img class="meals-img" src="images/platos.jpeg" />
+                    <span class="meals-bttn" href="#">PLATOS</span>
+                </a>
             </div>
             <div class="recipes">
-                <img class="secondary-menu-img" src="images/recetas.JPG" width="95%" height="243px"/>
-                <a class="recipes-bttn" href="#">RECETAS</a>
+                <a href="#" class="recipes-hover">
+                    <img class="recipes-img" src="images/recetas.JPG" />
+                    <span class="recipes-bttn" href="#">RECETAS</span>
+                </a>
             </div>
             <div class="exotics">
-                <img class="secondary-menu-img" src="images/exoticos.JPG" width="95%" height="243px"/>
-                <a class="exotics-bttn" href="#">EXOTICOS</a>
+                <a href="#" class="exotics-hover">
+                    <img class="exotics-img" src="images/exoticos.JPG" />
+                    <span class="exotics-bttn" href="#">EXOTICOS</span>
+                </a>
             </div>
         </section>
         <section class="video">
-            <iframe width="820" height="490" src="https://www.youtube.com/embed/eeeTvatu6fk" frameborder="0"
+            <iframe width="65%" height="490" src="https://www.youtube.com/embed/eeeTvatu6fk" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>

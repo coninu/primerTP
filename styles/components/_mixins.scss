@@ -1,7 +1,6 @@
 @mixin recipeconfig {
     width: 300px;
     height: 450px;
-    position: relative;
 }
 
 @mixin anchorconfig {
@@ -25,10 +24,16 @@
 @mixin imagedetails {
     display: none;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 22%;
+    right: 3%;
+    left: 0%;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
     padding: 20px;
-    top: 65%;
+}
+
+@mixin secondary-menu-img {
+    border-radius: 15%;
+    width: 95%; 
+    height: 243px;  
 }

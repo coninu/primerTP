@@ -32,6 +32,11 @@ header {
 }
 
 nav {
+
+    .mobile-menu {
+        display: none;
+    }
+
     ul {
         li {
             display: inline-block;
@@ -83,8 +88,13 @@ nav {
 
 .first-recipe {
     @include recipeconfig;
+
     .hover-info {
-        transition: all 0.5s ease-in-out;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
     }
 
     .img-1-details {
@@ -110,6 +120,14 @@ nav {
 .second-recipe {
     @include recipeconfig;
 
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
+
     .img-2-details {
         @include imagedetails;
 
@@ -133,6 +151,14 @@ nav {
 .third-recipe {
     @include recipeconfig;
 
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
+
     .img-3-details {
         @include imagedetails;
 
@@ -155,6 +181,14 @@ nav {
 
 .fourth-recipe {
     @include recipeconfig;
+
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
 
     .img-4-details {
         @include imagedetails;
@@ -193,8 +227,152 @@ nav {
         position: relative;
         width: 33%;
 
+        .meals-hover:hover .meals-img {
+            display: none;
+        }
+    }
+
+    img {
+        @include secondary-menu-img;
+    }
+
+    .meals-bttn {
+        @include anchorconfig;
+    }
+}
+
+.recipes {
+    position: relative;
+    width: 33%;
+
+    .recipes-hover:hover .recipes-img {
+        display: none;
+    }
+
+    img {
+        @include secondary-menu-img;
+    }
+
+    .recipes-bttn {
+        @include anchorconfig;
+    }
+}
+
+.exotics {
+    position: relative;
+    width: 33%;
+
+    .exotics-hover:hover .exotics-img {
+        display: none;
+    }
+
+    img {
+        @include secondary-menu-img;
+    }
+
+    .exotics-bttn {
+        @include anchorconfig;
+    }
+}
+
+//* FIN PARTE MARINA *//
+
+
+//*MOBILE*//
+
+@media screen and (max-width:768px) {
+
+    header {
+        width: 90%;
+
+        .title {
+            font-size: 50px;
+        }
+    }
+
+
+    nav {
+        .desktop-menu {
+            display: none;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: absolute;
+            width: 100px;
+            background-color: $orange;
+            color: white;
+            text-align: center;
+            padding: 5px 0 5px 20px;
+            margin: 0 23% 0 23%;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+
+        .main {
+            background: $orange;
+            display: block;
+            padding: 5px 0;
+            width: 70%;
+            margin: 20px auto;
+            border-radius: 9px;
+            color: white;
+            font-size: 15px;
+            transition: all 0.5s;
+
+            .fas.fa-bars {
+                margin-right: 20px;
+            }
+
+            &:hover {
+                color: black;
+
+                .mobile-menu-list {
+                    display: block;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .carrousel {
+        height: 750px;
+
+        .first-recipe {
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+
+            .img-1-details {
+                right: 1.8%;
+            }
+        }
+
+        .second-recipe,
+        .third-recipe,
+        .fourth-recipe {
+            display: none;
+        }
+    }
+
+    .secondary-menu {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        .meals {
+            position: relative;
+            width: 100%;
+
+            .meals-hover:hover .meals-img {
+                display: block;
+            }
+        }
+
         img {
-            border-radius: 15%;
+            @include secondary-menu-img;
         }
 
         .meals-bttn {
@@ -204,10 +382,14 @@ nav {
 
     .recipes {
         position: relative;
-        width: 33%;
+        width: 100%;
+
+        .recipes-hover:hover .recipes-img {
+            display: block;
+        }
 
         img {
-            border-radius: 15%;
+            @include secondary-menu-img;
         }
 
         .recipes-bttn {
@@ -217,16 +399,22 @@ nav {
 
     .exotics {
         position: relative;
-        width: 33%;
+        width: 100%;
+
+        .exotics-hover:hover .exotics-img {
+            display: block;
+        }
 
         img {
-            border-radius: 15%;
+            @include secondary-menu-img;
         }
 
         .exotics-bttn {
             @include anchorconfig;
         }
     }
-}
 
-//* FIN PARTE MARINA *//
+    .video {
+        display: none;
+    }
+}
