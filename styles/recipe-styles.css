@@ -88,9 +88,91 @@ nav ul li a:hover {
 }
 
 .container {
-  width: 60%;
+  width: 50%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.social-bar{
+display: flex;
+flex-direction:column;
+position:absolute;
+transform: translate(-150%, 10%);
+}
+
+.icons i{
+  font-size:20px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  width: 2em;
+  height: 1.9em;
+  border-radius:50%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 2;
+  
+}
+
+/* colores de social media icons */ 
+#facebook{
+  background-color: #3b5998;
+  color: white;
+ 
+}
+#twitter{
+  background-color:	#00b2ff;
+  color: white;
+ 
+}
+#google{
+  background-color:#ea4335 ;
+  color: white;
+ 
+}
+#ig{
+  background-color:#a49482 ;
+  color: white;
+}
+#pin{
+  background-color:#c8232c ;
+  color: white;
+}
+
+footer{
+  text-align: center;
+ 
+}
+
+.footerContainer{
+  width: 80%;
   max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+.SocialMediaFooter li {
+  display: inline;
+  margin-right: 7%;
+  margin-left: 2%;
+  
+}
+
+.SocialMediaFooter i{
+  color: #9b9089;
+}
+
+.SocialMediaFooter a{ 
+  text-decoration: none;
+  color: #9b9089;
+  font-size: 12px;
+  font-weight: bold;
+  /* sin el a no me sacaba el hipervinculo*/
+}
+
+.SocialMediaFooter a:hover{
+  color:black;
 }
