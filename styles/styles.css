@@ -262,3 +262,31 @@ aside{
     font-weight: bold;
     text-align: center;
 }
+/* Footer */
+
+footer{
+    text-align: center;
+}
+
+.SocialMediaFooter li {
+    display: inline;
+    margin-right: 7%;
+    margin-left: 2%;
+    
+}
+
+.SocialMediaFooter i{
+    color: #9b9089;
+}
+
+.SocialMediaFooter a{ 
+    text-decoration: none;
+    color: #9b9089;
+    font-size: 12px;
+    font-weight: bold;
+    /* sin el a no me sacaba el hipervinculo*/
+}
+
+.SocialMediaFooter a:hover{
+    color:black;
+}
