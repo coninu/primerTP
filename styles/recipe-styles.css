@@ -6,7 +6,7 @@
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
-  /* saque el list style para que se pusieran los puntitos*/
+  list-style: none;
 }
 
 body {
