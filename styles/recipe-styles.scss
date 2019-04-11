@@ -8,7 +8,6 @@
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -103,10 +102,148 @@ nav {
 }
 
 .container {
-    width: 60%;
+    width: 50%;
     max-width: 1200px;
     overflow: hidden;
     margin: 0 auto;
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
+
+.social-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-150%, 10%);
+  }
+  
+  .icons i {
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    width: 2em;
+    height: 1.9em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  #facebook {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  #twitter {
+    background-color: #00b2ff;
+    color: white;
+  }
+  
+  #google {
+    background-color: #ea4335;
+    color: white;
+  }
+  
+  #ig {
+    background-color: #a49482;
+    color: white;
+  }
+  
+  #pin {
+    background-color: #c8232c;
+    color: white;
+  }
+
+  .epigraph {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .epigraph-text {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      color: $grey;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  
+  .social-post {
+    font-size: 12px;
+    padding: 0 0 18px 0;
+    color: $grey;
+    font-weight: bold;
+    margin: 0 3em;
+  }
+  
+  .recipe h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin: 1em 0;
+  }
+  
+  .quote {
+    border-left: 1px solid red;
+    padding: 0 0 0 5%;
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quote-text {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1em;
+    margin: 0 0 2em 0;
+  }
+  
+  .author {
+    color: $grey;
+    font-weight: bold;
+  }
+  
+  .recipe-steps {
+    color: $grey;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+  }
+  
+  .footer-container {
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .social-media-footer {
+    li {
+      display: inline;
+      margin-right: 7%;
+      margin-left: 2%;
+    }
+    i {
+      color: $grey;
+    }
+    a {
+      text-decoration: none;
+      color: $grey;
+      font-size: 12px;
+      font-weight: bold;
+      &:hover {
+        color: black;
+      }
+    }
+  }
 

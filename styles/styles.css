@@ -361,7 +361,3 @@ footer{
     font-weight: bold;
     /* sin el a no me sacaba el hipervinculo*/
 }
-
-.social-media-footer a:hover{
-    color:black;
-}

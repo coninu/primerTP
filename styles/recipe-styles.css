@@ -6,7 +6,7 @@
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
-  list-style: none;
+  /* saque el list style para que se pusieran los puntitos*/
 }
 
 body {
@@ -89,7 +89,10 @@ nav ul li a:hover {
 
 .container {
   width: 50%;
-  margin: 5% auto;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
 }
@@ -142,24 +145,67 @@ transform: translate(-150%, 10%);
 
 /* Artcile */
 
-.epigrafe{
+.epigraph{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.epigrafeText{
+.epigraph-text{
   display: flex;
   flex-wrap: wrap;
 }
 
-.socialPost{
-  margin: auto;
+.epigraph-text p{
+  color: #9b9089;
+  font-weight:bold;
+  font-size: 12px;
+
+}
+
+.social-post{
   font-size: 12px;
   padding: 0 0 18px 0;
   color: #9b9089;
   font-weight:bold;
+  margin: 0 3em;
+}
+
+
+.recipe h1{
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin: 1em 0;
+}
+
+.quote{
+  border-left: 1px solid red;
+  padding: 0 0 0 5%;
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text{
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 0 0 2em 0;
+}
+
+.author{
+ color: #9b9089;
+ font-weight: bold;
+}
+
+.recipe-steps{
+  color: #9b9089;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 footer{
@@ -167,7 +213,7 @@ footer{
  
 }
 
-.footerContainer{
+.footer-container{
   width: 80%;
   max-width: 1200px;
   overflow: hidden;
@@ -175,18 +221,18 @@ footer{
   padding: 50px 0;
 }
 
-.SocialMediaFooter li {
+.social-media-footer li {
   display: inline;
   margin-right: 7%;
   margin-left: 2%;
   
 }
 
-.SocialMediaFooter i{
+.social-media-footer i{
   color: #9b9089;
 }
 
-.SocialMediaFooter a{ 
+.social-media-footer a{ 
   text-decoration: none;
   color: #9b9089;
   font-size: 12px;
@@ -194,6 +240,6 @@ footer{
   /* sin el a no me sacaba el hipervinculo*/
 }
 
-.SocialMediaFooter a:hover{
+.social-media-footer a:hover{
   color:black;
 }
