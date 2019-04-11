@@ -140,6 +140,28 @@ transform: translate(-150%, 10%);
   color: white;
 }
 
+/* Artcile */
+
+.epigrafe{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.epigrafeText{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socialPost{
+  margin: auto;
+  font-size: 12px;
+  padding: 0 0 18px 0;
+  color: #9b9089;
+  font-weight:bold;
+}
+
 footer{
   text-align: center;
  
