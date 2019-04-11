@@ -131,18 +131,6 @@ nav {
     justify-content: space-between;
 
     @media only screen and (max-width: 768px) {
-        height: 750px;
-
-        .first-recipe {
-            display: block;
-            width: 75%;
-            margin: 0 auto;
-
-            .img-1-details {
-                right: 1.8%;
-            }
-        }
-
         .second-recipe,
         .third-recipe,
         .fourth-recipe {
@@ -152,7 +140,12 @@ nav {
 }
 
 .first-recipe {
-    @include recipeconfig;
+    @include recipeconfig (15px, 0);
+    @media only screen and (max-width: 768px) {
+        display: block;
+        width: 75%;
+        margin: 0 auto;      
+    }
 
     .hover-info {
         position: relative;
@@ -164,6 +157,9 @@ nav {
 
     .img-1-details {
         @include imagedetails;
+        @media only screen and (max-width: 768px) {
+            right: 1.8%;            
+        }
 
         .info {
             font-size: 10px;
@@ -183,7 +179,7 @@ nav {
 }
 
 .second-recipe {
-    @include recipeconfig;
+    @include recipeconfig (15px, 0);
 
     .hover-info {
         position: relative;
@@ -214,7 +210,7 @@ nav {
 }
 
 .third-recipe {
-    @include recipeconfig;
+    @include recipeconfig (0, 0);
 
     .hover-info {
         position: relative;
@@ -245,7 +241,7 @@ nav {
 }
 
 .fourth-recipe {
-    @include recipeconfig;
+    @include recipeconfig (0, 15px);
 
     .hover-info {
         position: relative;
@@ -291,7 +287,8 @@ nav {
     @media only screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .meals {
@@ -299,7 +296,6 @@ nav {
         width: 33%;
 
         @media only screen and (max-width: 768px) {
-            position: relative;
             width: 100%;
         }
 

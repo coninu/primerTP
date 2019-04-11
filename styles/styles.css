@@ -111,17 +111,6 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
-  .carrousel {
-    height: 750px;
-  }
-  .carrousel .first-recipe {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-  }
-  .carrousel .first-recipe .img-1-details {
-    right: 1.8%;
-  }
   .carrousel .second-recipe,
   .carrousel .third-recipe,
   .carrousel .fourth-recipe {
@@ -130,8 +119,16 @@ nav ul li a:hover {
 }
 
 .first-recipe {
-  width: 300px;
-  height: 450px;
+  width: 50%;
+  margin-right: 15px;
+  margin-left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .first-recipe {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 .first-recipe .hover-info {
   position: relative;
@@ -149,6 +146,11 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .first-recipe .img-1-details {
+    right: 1.8%;
+  }
+}
 .first-recipe .img-1-details .info {
   font-size: 10px;
   padding: 15px 0 15px 0;
@@ -163,8 +165,9 @@ nav ul li a:hover {
 }
 
 .second-recipe {
-  width: 300px;
-  height: 450px;
+  width: 50%;
+  margin-right: 15px;
+  margin-left: 0;
 }
 .second-recipe .hover-info {
   position: relative;
@@ -196,8 +199,9 @@ nav ul li a:hover {
 }
 
 .third-recipe {
-  width: 300px;
-  height: 450px;
+  width: 50%;
+  margin-right: 0;
+  margin-left: 0;
 }
 .third-recipe .hover-info {
   position: relative;
@@ -229,8 +233,9 @@ nav ul li a:hover {
 }
 
 .fourth-recipe {
-  width: 300px;
-  height: 450px;
+  width: 50%;
+  margin-right: 0;
+  margin-left: 15px;
 }
 .fourth-recipe .hover-info {
   position: relative;
@@ -278,7 +283,8 @@ nav ul li a:hover {
   .secondary-menu {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .secondary-menu .meals {
@@ -287,7 +293,6 @@ nav ul li a:hover {
 }
 @media only screen and (max-width: 768px) {
   .secondary-menu .meals {
-    position: relative;
     width: 100%;
   }
 }
@@ -301,14 +306,14 @@ nav ul li a:hover {
 }
 .secondary-menu img {
   border-radius: 15%;
-  width: 95%;
-  height: 243px;
+  width: 100%;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
   .secondary-menu img {
     border-radius: 15%;
-    width: 95%;
-    height: 243px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 .secondary-menu .meals-bttn {
@@ -366,14 +371,14 @@ nav ul li a:hover {
 }
 .recipes img {
   border-radius: 15%;
-  width: 95%;
-  height: 243px;
+  width: 100%;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
   .recipes img {
     border-radius: 15%;
-    width: 95%;
-    height: 243px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 .recipes .recipes-bttn {
@@ -431,14 +436,14 @@ nav ul li a:hover {
 }
 .exotics img {
   border-radius: 15%;
-  width: 95%;
-  height: 243px;
+  width: 100%;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
   .exotics img {
     border-radius: 15%;
-    width: 95%;
-    height: 243px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 .exotics .exotics-bttn {
