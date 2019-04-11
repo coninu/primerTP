@@ -486,3 +486,125 @@ nav ul li a:hover {
     display: none;
   }
 }
+
+.epigraph {
+  color: #9b9089;
+  font-size: 12px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+aside {
+  float: right;
+  max-width: 30%;
+  margin: 0 0 0 1%;
+}
+aside .aside-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10% auto;
+}
+aside h3 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3px;
+}
+aside .about-me-info {
+  color: #9b9089;
+  margin: 0 5% 10% 5%;
+  width: 90%;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+aside .pink-button {
+  background-color: #ffdce2;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  line-height: 19px;
+  text-align: center;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+.half-container {
+  width: 60%;
+}
+
+.posts {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+}
+.posts .image-recipe {
+  width: 60%;
+}
+.posts .image-recipe img {
+  width: 100%;
+  border-radius: 10%;
+}
+.posts .text-recipe {
+  width: 100%;
+  margin: 0 0 0 25px;
+}
+.posts .text-recipe .top-line {
+  display: flex;
+  width: 380px;
+}
+.posts .text-recipe .top-line .social-post {
+  margin: auto;
+  font-size: 12px;
+  padding: 0 0 18px 0;
+  color: #9b9089;
+  font-weight: bold;
+}
+.posts .text-recipe h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.posts .text-recipe p {
+  color: #9b9089;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.posts .text-recipe .read-more {
+  background-color: #ffdce2;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  line-height: 19px;
+  text-align: center;
+  padding: 10px 23px;
+  border-radius: 10%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.social-media-footer li {
+  display: inline;
+  margin-right: 7%;
+  margin-left: 2%;
+}
+.social-media-footer i {
+  color: #9b9089;
+}
+.social-media-footer a {
+  text-decoration: none;
+  color: #9b9089;
+  font-size: 12px;
+  font-weight: bold;
+}
+.social-media-footer a:hover {
+  color: black;
+}

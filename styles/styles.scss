@@ -131,6 +131,7 @@ nav {
     justify-content: space-between;
 
     @media only screen and (max-width: 768px) {
+
         .second-recipe,
         .third-recipe,
         .fourth-recipe {
@@ -141,10 +142,11 @@ nav {
 
 .first-recipe {
     @include recipeconfig (15px, 0);
+
     @media only screen and (max-width: 768px) {
         display: block;
         width: 75%;
-        margin: 0 auto;      
+        margin: 0 auto;
     }
 
     .hover-info {
@@ -157,8 +159,9 @@ nav {
 
     .img-1-details {
         @include imagedetails;
+
         @media only screen and (max-width: 768px) {
-            right: 1.8%;            
+            right: 1.8%;
         }
 
         .info {
@@ -400,3 +403,142 @@ nav {
 }
 
 //* FIN PARTE MARINA *//
+
+.epigraph {
+    color: $grey;
+    font-size: 12px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+aside {
+    float: right;
+    max-width: 30%;
+    margin: 0 0 0 1%;
+
+    .aside-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10% auto;
+    }
+
+    h3 {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .about-me-info {
+        color: $grey;
+        margin: 0 5% 10% 5%;
+        width: 90%;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pink-button {
+        background-color: rgb(255, 220, 226);
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        line-height: 19px;
+        text-align: center;
+        padding: 8px 0;
+        text-transform: uppercase;
+    }
+}
+
+.half-container {
+    width: 60%;
+}
+
+.posts {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 40px 0;
+
+    .image-recipe {
+        width: 60%;
+    
+        img {
+            width: 100%;
+            border-radius: 10%;
+        }
+    }
+
+    .text-recipe {
+        width: 100%;
+        margin: 0 0 0 25px;
+
+        .top-line {
+            display: flex;
+            width: 380px;
+
+            .social-post {
+                margin: auto;
+                font-size: 12px;
+                padding: 0 0 18px 0;
+                color: $grey;
+                font-weight: bold;
+            }
+        }
+    
+        h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    
+        p {
+            color: $grey;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 25px;
+        }
+
+        .read-more {
+            background-color: rgb(255, 220, 226);
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            line-height: 19px;
+            text-align: center;
+            padding: 10px 23px;
+            border-radius: 10%;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.social-media-footer {
+    li {
+        display: inline;
+        margin-right: 7%;
+        margin-left: 2%;
+    }
+
+    i {
+        color: $grey;
+    }
+
+    a {
+        text-decoration: none;
+        color: $grey;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
