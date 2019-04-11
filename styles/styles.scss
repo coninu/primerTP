@@ -21,6 +21,10 @@ header {
     margin: 0 auto;
     text-align: center;
 
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+
     .title {
         font-family: "Indie Flower", cursive;
         font-size: 35px;
@@ -28,11 +32,53 @@ header {
         color: $orange;
         padding: 5px;
         margin: 10px 0;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.desktop-menu {
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
 
 .mobile-menu {
     display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+
+        ul {
+
+            li {
+                margin: 0;
+                background: $orange;
+                display: block;
+                padding: 5px 30vw;
+                margin: 20px auto;
+                border-radius: 9px;
+
+                .fas.fa-bars {
+                    margin-right: 20px;
+                }
+
+                a {
+                    color: white;
+                    font-size: 15px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 nav {
@@ -83,6 +129,26 @@ nav {
 .carrousel {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+        height: 750px;
+
+        .first-recipe {
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+
+            .img-1-details {
+                right: 1.8%;
+            }
+        }
+
+        .second-recipe,
+        .third-recipe,
+        .fourth-recipe {
+            display: none;
+        }
+    }
 }
 
 .first-recipe {
@@ -222,21 +288,44 @@ nav {
     justify-content: space-between;
     margin-bottom: 20px;
 
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
     .meals {
         position: relative;
         width: 33%;
 
+        @media only screen and (max-width: 768px) {
+            position: relative;
+            width: 100%;
+        }
+
         .meals-hover:hover .meals-img {
             display: none;
+
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
         }
     }
 
     img {
         @include secondary-menu-img;
+
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
+        }
     }
 
     .meals-bttn {
         @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
+            @include anchorconfig;
+        }
     }
 }
 
@@ -244,16 +333,33 @@ nav {
     position: relative;
     width: 33%;
 
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+    }
+
     .recipes-hover:hover .recipes-img {
         display: none;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     img {
         @include secondary-menu-img;
+
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
+        }
     }
 
     .recipes-bttn {
         @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
+            @include anchorconfig;
+        }
     }
 }
 
@@ -261,175 +367,40 @@ nav {
     position: relative;
     width: 33%;
 
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+    }
+
     .exotics-hover:hover .exotics-img {
         display: none;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     img {
         @include secondary-menu-img;
+
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
+        }
     }
 
     .exotics-bttn {
         @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
+            @include anchorconfig;
+        }
+    }
+}
+
+.video {
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
 
 //* FIN PARTE MARINA *//
-
-
-//*MOBILE*//
-
-@media screen and (max-width:768px) {
-
-    header {
-        width: 90%;
-
-        .title {
-            font-size: 50px;
-        }
-    }
-
-    .desktop-menu {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-        position: relative;
-        ul {
-
-            li {
-                margin: 0;
-            }
-
-            li span.main {
-                background: $orange;
-                display: block;
-                padding: 5px 30vw;
-                margin: 20px auto;
-                border-radius: 9px;
-    
-                .fas.fa-bars {
-                    margin-right: 20px;
-                }
-    
-                a {
-                    color: white;
-                    font-size: 15px;
-                    transition: 0.5s;
-    
-                    &:hover {
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
-
-    .mobile-menu-list {
-        display: none;
-        position: absolute;
-        width: 100px;
-        background-color: $orange;
-        padding: 15px;
-        top: 72%;
-        left: 34%;
-
-        a {
-            color: white;
-            font-size: 15px;
-            transition: 0.5s;
-            margin: 10px;
-
-            &:hover {
-                color: black;
-            }
-        }
-    }
-
-    .main-1:hover .mobile-menu-list {
-        display: block;
-        z-index: 1;
-    }
-
-    .carrousel {
-        height: 750px;
-
-        .first-recipe {
-            display: block;
-            width: 75%;
-            margin: 0 auto;
-
-            .img-1-details {
-                right: 1.8%;
-            }
-        }
-
-        .second-recipe,
-        .third-recipe,
-        .fourth-recipe {
-            display: none;
-        }
-    }
-
-    .secondary-menu {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-
-        .meals {
-            position: relative;
-            width: 100%;
-
-            .meals-hover:hover .meals-img {
-                display: block;
-            }
-        }
-
-        img {
-            @include secondary-menu-img;
-        }
-
-        .meals-bttn {
-            @include anchorconfig;
-        }
-    }
-
-    .recipes {
-        position: relative;
-        width: 100%;
-
-        .recipes-hover:hover .recipes-img {
-            display: block;
-        }
-
-        img {
-            @include secondary-menu-img;
-        }
-
-        .recipes-bttn {
-            @include anchorconfig;
-        }
-    }
-
-    .exotics {
-        position: relative;
-        width: 100%;
-
-        .exotics-hover:hover .exotics-img {
-            display: block;
-        }
-
-        img {
-            @include secondary-menu-img;
-        }
-
-        .exotics-bttn {
-            @include anchorconfig;
-        }
-    }
-
-    .video {
-        display: none;
-    }
-}
