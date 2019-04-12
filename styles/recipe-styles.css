@@ -282,7 +282,9 @@ footer .social-media-footer a {
 }
 footer .social-media-footer a:hover {
   color: black;
+
 }
+
 
 @media only screen and (max-width: 768px) {
   .go-to{
