@@ -674,7 +674,7 @@ footer {
   }
 
   /* posts */
-  .post-2{
+  .post2{
     display:none;
   }
   
@@ -682,8 +682,8 @@ footer {
     display:none;
   }
   
-  .post-1{
-    width:80%;
+  .posts{
+    width:90%;
   }
   
   
