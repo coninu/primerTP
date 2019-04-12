@@ -498,7 +498,11 @@ nav ul li a:hover {
   width: 67%;
   display: inline-block;
 }
+
 @media only screen and (max-width: 768px) {
+  .video-and-posts{
+    width:90%;
+  }
   .video {
     display: none;
   }
@@ -706,7 +710,7 @@ footer {
     justify-content: center;
   }
 
-  .video-aside{
+  .video-and-posts{
     width:90%;
   }
 }
