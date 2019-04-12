@@ -571,9 +571,23 @@ aside .pink-button {
   border-top: 1px solid #ccc;
   padding: 40px 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts{
+    width:90%;
+  }
+}
+
 .posts .image-recipe {
   width: 60%;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts .image-recipe{
+    display:none;
+  }
+  }
+
 .posts .image-recipe img {
   width: 100%;
   border-radius: 10%;
@@ -582,10 +596,25 @@ aside .pink-button {
   width: 100%;
   margin: 0 0 0 25px;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts .text-recipe{
+    padding-top:10px;
+  }
+  }
+
 .posts .text-recipe .top-line {
   display: flex;
   width: 380px;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts .text-recipe .top-line{
+    display:inline-flex;
+    width: initial;
+  }
+}
+
 .posts .text-recipe .top-line .social-post {
   margin: auto;
   font-size: 12px;
@@ -602,6 +631,13 @@ aside .pink-button {
   padding-top: 10px;
   padding-bottom: 25px;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts .text-recipe h3, p{
+    text-align: center;
+  }
+  }
+
 .posts .text-recipe .read-more {
   background-color: #ffdce2;
   font-size: 12px;
@@ -611,6 +647,14 @@ aside .pink-button {
   padding: 10px 23px;
   border-radius: 10%;
 }
+
+@media only screen and (max-width: 768px) {
+  .posts .text-recipe .read-more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  }
 
 footer {
   text-align: center;
@@ -677,40 +721,7 @@ footer {
     display:none;
   }
 
-  /* posts */
   .post2{
     display:none;
-  }
-  
-  .image-recipe{
-    display:none;
-  }
-  
-  .posts{
-    width:90%;
-  }
-  
-  
-  .posts .text-recipe .top-line{
-    display:inline-flex;
-    width: initial;
-  }
-  
-  .posts .text-recipe{
-    padding-top:10px;
-  }
-  
-  .posts .text-recipe h3, p{
-    text-align: center;
-  }
-  
-  .posts .text-recipe .read-more{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .video-and-posts{
-    width:90%;
   }
 }
