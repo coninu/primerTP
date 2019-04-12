@@ -21,6 +21,10 @@ header {
     margin: 0 auto;
     text-align: center;
 
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+
     .title {
         font-family: "Indie Flower", cursive;
         font-size: 35px;
@@ -28,6 +32,52 @@ header {
         color: $orange;
         padding: 5px;
         margin: 10px 0;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.desktop-menu {
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+        position: relative;
+
+        ul {
+
+            li {
+                margin: 0;
+                background: $orange;
+                display: block;
+                padding: 5px 30vw;
+                margin: 20px auto;
+                border-radius: 9px;
+
+                .fas.fa-bars {
+                    margin-right: 20px;
+                }
+
+                a {
+                    color: white;
+                    font-size: 15px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+            }
+        }
     }
 }
 
@@ -79,13 +129,40 @@ nav {
 .carrousel {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+
+        .second-recipe,
+        .third-recipe,
+        .fourth-recipe {
+            display: none;
+        }
+    }
 }
 
 .first-recipe {
-    @include recipeconfig;
+    @include recipeconfig (15px, 0);
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
 
     .img-1-details {
         @include imagedetails;
+
+        @media only screen and (max-width: 768px) {
+            right: 1.8%;
+        }
 
         .info {
             font-size: 10px;
@@ -105,7 +182,15 @@ nav {
 }
 
 .second-recipe {
-    @include recipeconfig;
+    @include recipeconfig (15px, 0);
+
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
 
     .img-2-details {
         @include imagedetails;
@@ -128,7 +213,15 @@ nav {
 }
 
 .third-recipe {
-    @include recipeconfig;
+    @include recipeconfig (0, 0);
+
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
 
     .img-3-details {
         @include imagedetails;
@@ -151,7 +244,15 @@ nav {
 }
 
 .fourth-recipe {
-    @include recipeconfig;
+    @include recipeconfig (0, 15px);
+
+    .hover-info {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
 
     .img-4-details {
         @include imagedetails;
@@ -186,38 +287,110 @@ nav {
     justify-content: space-between;
     margin-bottom: 20px;
 
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .meals {
         position: relative;
+        width: 33%;
 
-        img {
-            border-radius: 15%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
         }
 
-        .meals-bttn {
-            @include anchorconfig;
-        }
-    }
+        .meals-hover:hover .meals-img {
+            display: none;
 
-    .recipes {
-        position: relative;
-
-        img {
-            border-radius: 15%;
-        }
-
-        .recipes-bttn {
-            @include anchorconfig;
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
         }
     }
 
-    .exotics {
-        position: relative;
+    img {
+        @include secondary-menu-img;
 
-        img {
-            border-radius: 15%;
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
         }
+    }
 
-        .exotics-bttn {
+    .meals-bttn {
+        @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
+            @include anchorconfig;
+        }
+    }
+}
+
+.recipes {
+    position: relative;
+    width: 33%;
+
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+    }
+
+    .recipes-hover:hover .recipes-img {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    img {
+        @include secondary-menu-img;
+
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
+        }
+    }
+
+    .recipes-bttn {
+        @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
+            @include anchorconfig;
+        }
+    }
+}
+
+.exotics {
+    position: relative;
+    width: 33%;
+
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+    }
+
+    .exotics-hover:hover .exotics-img {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    img {
+        @include secondary-menu-img;
+
+        @media only screen and (max-width: 768px) {
+            @include secondary-menu-img;
+        }
+    }
+
+    .exotics-bttn {
+        @include anchorconfig;
+
+        @media only screen and (max-width: 768px) {
             @include anchorconfig;
         }
     }
@@ -228,137 +401,144 @@ nav {
         display: none;
     }
 }
+
 //* FIN PARTE MARINA *//
 
-.epigrafe {
-    color:  $grey;
+.epigraph {
+    color: $grey;
     font-size: 12px;
     display: inline-block;
     padding-bottom: 5px;
-  }
+}
 
-  aside {
+aside {
     float: right;
     max-width: 30%;
     margin: 0 0 0 1%;
-  }
-  
-  .aside-image {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10% auto;
-  }
-  
-  .pink-button {
-    background-color: rgb(255, 220, 226);
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
-    line-height: 19px;
-    text-align: center;
-    padding: 8px 0;
-    text-transform: uppercase;
-  }
-  
-  .about-me h3 {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3px;
-  }
-  
-  .about-me-info {
-    color: $grey;
-    margin: 0 5% 10% 5%;
-    width: 90%;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: bold;
-    text-align: center;
-  } 
 
-  .half-container {
+    .aside-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 10% auto;
+    }
+
+    h3 {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .about-me-info {
+        color: $grey;
+        margin: 0 5% 10% 5%;
+        width: 90%;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pink-button {
+        background-color: rgb(255, 220, 226);
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        line-height: 19px;
+        text-align: center;
+        padding: 8px 0;
+        text-transform: uppercase;
+    }
+}
+
+.half-container {
     width: 60%;
-  }
-  
-  .top-line {
-    display: flex;
-    width: 380px;
-  }
-  
-  .social-post {
-    margin: auto;
-    font-size: 12px;
-    padding: 0 0 18px 0;
-    color: $grey;
-    font-weight: bold;
-  }
-  
-  .posts {
+}
+
+.posts {
     display: flex;
     border-top: 1px solid #ccc;
     padding: 40px 0;
-  }
-  
-  .image-recipe {
-    width: 60%;
-    img {
-      width: 100%;
-      border-radius: 10%;
-    }
-  }
-  
-  .text-recipe {
-    width: 100%;
-    margin: 0 0 0 25px;
-    h3 {
-      color: black;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    p {
-      color: $grey;
-      font-size: 14px;
-      padding-top: 10px;
-      padding-bottom: 25px;
-    }
-  }
-  
-  .read-more {
-    background-color: rgb(255, 220, 226);
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
-    line-height: 19px;
-    text-align: center;
-    padding: 10px 23px;
-    border-radius: 10%;
-  }
 
-  footer {
+    .image-recipe {
+        width: 60%;
+    
+        img {
+            width: 100%;
+            border-radius: 10%;
+        }
+    }
+
+    .text-recipe {
+        width: 100%;
+        margin: 0 0 0 25px;
+
+        .top-line {
+            display: flex;
+            width: 380px;
+
+            .social-post {
+                margin: auto;
+                font-size: 12px;
+                padding: 0 0 18px 0;
+                color: $grey;
+                font-weight: bold;
+            }
+        }
+    
+        h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    
+        p {
+            color: $grey;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 25px;
+        }
+
+        .read-more {
+            background-color: rgb(255, 220, 226);
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            line-height: 19px;
+            text-align: center;
+            padding: 10px 23px;
+            border-radius: 10%;
+        }
+    }
+}
+
+footer {
     text-align: center;
     padding-top: 5%;
-  }
-  
-  .social-media-footer {
+}
+
+.social-media-footer {
     li {
-      display: inline;
-      margin-right: 7%;
-      margin-left: 2%;
+        display: inline;
+        margin-right: 7%;
+        margin-left: 2%;
     }
+
     i {
-      color: $grey;
+        color: $grey;
     }
+
     a {
-      text-decoration: none;
-      color: $grey;
-      font-size: 12px;
-      font-weight: bold;
-      &:hover {
-        color: black;
-      }
+        text-decoration: none;
+        color: $grey;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+        }
     }
-  }
+}

@@ -18,6 +18,11 @@ header {
   margin: 0 auto;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    width: 90%;
+  }
+}
 header .title {
   font-family: "Indie Flower", cursive;
   font-size: 35px;
@@ -25,6 +30,46 @@ header .title {
   color: #fa7855;
   padding: 5px;
   margin: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  header .title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    position: relative;
+  }
+  .mobile-menu ul li {
+    margin: 0;
+    background: #fa7855;
+    display: block;
+    padding: 5px 30vw;
+    margin: 20px auto;
+    border-radius: 9px;
+  }
+  .mobile-menu ul li .fas.fa-bars {
+    margin-right: 20px;
+  }
+  .mobile-menu ul li a {
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  .mobile-menu ul li a:hover {
+    color: black;
+  }
 }
 
 nav ul li {
@@ -68,13 +113,28 @@ nav ul li a:hover {
 .path {
   margin-left: 10%;
 }
+@media only screen and (max-width: 768px) {
+  .path {
+    margin-left: 5%;
+  }
+}
 .path ul {
   display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .path ul {
+    flex-wrap: wrap;
+  }
 }
 .path ul li {
   margin-right: 10px;
   margin-top: 10px;
   font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+  .path ul li {
+    font-size: 20px;
+  }
 }
 .path ul li a {
   text-decoration: none;
@@ -97,123 +157,105 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
-
-.social-bar{
-display: flex;
-flex-direction:column;
-position:absolute;
-transform: translate(-150%, 10%);
+.social-bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-150%, 10%);
 }
-
-.icons i{
-  font-size:20px;
+.social-bar .icons i {
+  font-size: 20px;
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
   width: 2em;
   height: 1.9em;
-  border-radius:50%;
+  border-radius: 50%;
   text-align: center;
   line-height: 2;
-  
 }
 
-/* colores de social media icons */ 
-#facebook{
+#facebook {
   background-color: #3b5998;
   color: white;
- 
 }
-#twitter{
-  background-color:	#00b2ff;
-  color: white;
- 
-}
-#google{
-  background-color:#ea4335 ;
-  color: white;
- 
-}
-#ig{
-  background-color:#a49482 ;
-  color: white;
-}
-#pin{
-  background-color:#c8232c ;
+
+#twitter {
+  background-color: #00b2ff;
   color: white;
 }
 
-/* Artcile */
+#google {
+  background-color: #ea4335;
+  color: white;
+}
 
-.epigraph{
+#ig {
+  background-color: #a49482;
+  color: white;
+}
+
+#pin {
+  background-color: #c8232c;
+  color: white;
+}
+
+.epigraph {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.epigraph-text{
+.epigraph .epigraph-text {
   display: flex;
   flex-wrap: wrap;
 }
-
-.epigraph-text p{
+.epigraph .epigraph-text p {
   color: #9b9089;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 12px;
-
 }
 
-.social-post{
+.social-post {
   font-size: 12px;
   padding: 0 0 18px 0;
   color: #9b9089;
-  font-weight:bold;
+  font-weight: bold;
   margin: 0 3em;
 }
 
-
-.recipe h1{
+.recipe h1 {
   font-size: 2em;
   font-weight: bold;
   color: black;
   text-align: left;
   margin: 1em 0;
 }
-
-.quote{
+.recipe .quote {
   border-left: 1px solid red;
   padding: 0 0 0 5%;
   margin: 3em 0;
   display: flex;
   flex-direction: column;
 }
-
-.quote-text{
+.recipe .quote .quote-text {
   color: black;
   font-weight: bold;
   font-size: 15px;
   line-height: 1em;
   margin: 0 0 2em 0;
 }
-
-.author{
- color: #9b9089;
- font-weight: bold;
+.recipe .quote .author {
+  color: #9b9089;
+  font-weight: bold;
 }
-
-.recipe-steps{
+.recipe .recipe-steps {
   color: #9b9089;
   font-weight: bold;
   font-size: 14px;
 }
 
-footer{
-  text-align: center;
- 
-}
-
-.footer-container{
+.footer-container {
   width: 80%;
   max-width: 1200px;
   overflow: hidden;
@@ -221,27 +263,25 @@ footer{
   padding: 50px 0;
 }
 
-.social-media-footer li {
+footer {
+  text-align: center;
+}
+footer .social-media-footer li {
   display: inline;
   margin-right: 7%;
   margin-left: 2%;
-  
 }
-
-.social-media-footer i{
+footer .social-media-footer i {
   color: #9b9089;
 }
-
-.social-media-footer a{ 
+footer .social-media-footer a {
   text-decoration: none;
   color: #9b9089;
   font-size: 12px;
   font-weight: bold;
-  /* sin el a no me sacaba el hipervinculo*/
 }
-
-.social-media-footer a:hover{
-  color:black;
+footer .social-media-footer a:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {
