@@ -165,7 +165,8 @@ nav {
         @include imagedetails;
 
         @media only screen and (max-width: 768px) {
-            right: 1.8%;
+            right: 0%;
+            left: 0%;
         }
 
         .info {

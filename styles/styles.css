@@ -149,10 +149,13 @@ nav ul li a:hover {
   bottom: 50%;
   height: 150px;
   opacity: 0;
+  left: 0%;
+  right: 0%;
 }
 @media only screen and (max-width: 768px) {
   .first-recipe .img-1-details {
-    right: 1.8%;
+    right: 0%;
+    left: 0%;
   }
 }
 .first-recipe .img-1-details .info {
@@ -189,6 +192,8 @@ nav ul li a:hover {
   bottom: 50%;
   height: 150px;
   opacity: 0;
+  left: 0%;
+  right: 0%;
 }
 .second-recipe .img-2-details .info {
   font-size: 10px;
@@ -224,6 +229,8 @@ nav ul li a:hover {
   bottom: 50%;
   height: 150px;
   opacity: 0;
+  left: 0%;
+  right: 0%;
 }
 .third-recipe .img-3-details .info {
   font-size: 10px;
@@ -259,6 +266,8 @@ nav ul li a:hover {
   bottom: 50%;
   height: 150px;
   opacity: 0;
+  left: 0%;
+  right: 0%;
 }
 .fourth-recipe .img-4-details .info {
   font-size: 10px;
