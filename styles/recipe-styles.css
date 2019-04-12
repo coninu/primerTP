@@ -11,6 +11,7 @@
 
 body {
   font-family: "IBM Plex Mono", monospace;
+  font-weight:bold;
 }
 
 header {
@@ -163,6 +164,18 @@ nav ul li a:hover {
   position: absolute;
   transform: translate(-150%, 10%);
 }
+
+@media only screen and (max-width: 768px) {
+  .social-bar{
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    transform: none;}
+  
+.social-bar .icons i{
+  padding: 2px;}
+}
+
 .social-bar .icons i {
   font-size: 20px;
   text-decoration: none;
@@ -200,6 +213,11 @@ nav ul li a:hover {
   color: white;
 }
 
+.article-image {
+  border-radius: 10%;
+  width: 100%;
+}
+
 .epigraph {
   width: 100%;
   display: flex;
@@ -212,7 +230,6 @@ nav ul li a:hover {
 }
 .epigraph .epigraph-text p {
   color: #9b9089;
-  font-weight: bold;
   font-size: 12px;
 }
 
@@ -220,13 +237,11 @@ nav ul li a:hover {
   font-size: 12px;
   padding: 0 0 18px 0;
   color: #9b9089;
-  font-weight: bold;
   margin: 0 3em;
 }
 
 .recipe h1 {
   font-size: 2em;
-  font-weight: bold;
   color: black;
   text-align: left;
   margin: 1em 0;
@@ -240,47 +255,50 @@ nav ul li a:hover {
 }
 .recipe .quote .quote-text {
   color: black;
-  font-weight: bold;
   font-size: 15px;
   line-height: 1em;
   margin: 0 0 2em 0;
 }
 .recipe .quote .author {
   color: #9b9089;
-  font-weight: bold;
 }
 .recipe .recipe-steps {
   color: #9b9089;
-  font-weight: bold;
   font-size: 14px;
-}
-
-.footer-container {
-  width: 80%;
-  max-width: 1200px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 50px 0;
 }
 
 footer {
   text-align: center;
+  padding: 0 0 70px 0;
+  width: 90%;
+  margin: 0 auto;
 }
-footer .social-media-footer li {
+
+.social-media-footer {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4dfe0;
+}
+.social-media-footer li {
   display: inline;
   margin-right: 7%;
   margin-left: 2%;
 }
-footer .social-media-footer i {
-  color: #9b9089;
+.social-media-footer li:hover {
+  color: black;
 }
-footer .social-media-footer a {
+.social-media-footer i {
+  color: #9b9089;
+  margin-right: 10px;
+}
+.social-media-footer a {
   text-decoration: none;
   color: #9b9089;
   font-size: 12px;
-  font-weight: bold;
 }
-footer .social-media-footer a:hover {
+.social-media-footer a:hover {
+  color: black;
+}
+.social-media-footer a:hover i {
   color: black;
 
 }
@@ -293,7 +311,7 @@ footer .social-media-footer a:hover {
     position:relative;
     width:75%;
     height: auto;
-    margin-left:15%;
+    margin-left:10%;
     bottom: 50px;
     }
     
