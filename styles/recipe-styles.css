@@ -283,6 +283,8 @@ footer {
   margin-right: 7%;
   margin-left: 2%;
 }
+
+
 .social-media-footer li:hover {
   color: black;
 }
@@ -330,4 +332,10 @@ footer {
     border-right-width: 5px;
     padding-right: 5px;
   }
+
+  .icon-label{
+    display:none;
+  }
+
+  
 }

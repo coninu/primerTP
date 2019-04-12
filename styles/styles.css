@@ -609,6 +609,7 @@ footer {
   margin-right: 7%;
   margin-left: 2%;
 }
+
 .social-media-footer li:hover {
   color: black;
 }
@@ -655,8 +656,8 @@ footer {
     padding-right: 5px;
   }
 
-.social-media-footer p{
-  display:none;
-}
+  .icon-label{
+    display:none;
+  }
   
 }
