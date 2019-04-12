@@ -494,7 +494,7 @@ nav ul li a:hover {
   }
 }
 
-.video {
+.video-aside {
   width: 67%;
   display: inline-block;
 }
@@ -672,5 +672,41 @@ footer {
   .icon-label{
     display:none;
   }
+
+  /* posts */
+  .post-2{
+    display:none;
+  }
   
+  .image-recipe{
+    display:none;
+  }
+  
+  .post-1{
+    width:80%;
+  }
+  
+  
+  .posts .text-recipe .top-line{
+    display:inline-flex;
+    width: initial;
+  }
+  
+  .posts .text-recipe{
+    padding-top:10px;
+  }
+  
+  .posts .text-recipe h3, p{
+    text-align: center;
+  }
+  
+  .posts .text-recipe .read-more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video-aside{
+    width:90%;
+  }
 }
