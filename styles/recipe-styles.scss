@@ -179,6 +179,10 @@ nav {
 }
 
 //* PARTE DE MARINA *//
+@media only screen and (max-width: 768px) {
+  .container{
+  width:70%;}
+}
 
 .social-bar {
   display: flex;
@@ -186,8 +190,24 @@ nav {
   position: absolute;
   transform: translate(-150%, 10%);
 
+  @media only screen and (max-width: 768px) {
+    .social-bar{
+      display: flex;
+      flex-direction: row;
+      position: initial;
+      transform: none; }
+    }
+
+    .social-bar .icons i{
+      padding: 2px;
+    }
+
+  .icons{
+    margin:auto;
+  }
+
   .icons i {
-    font-size: 20px;
+    font-size: 1em;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -256,6 +276,7 @@ nav {
 .recipe {
   h1 {
     font-size: 2em;
+    font-weight:bold;
     color: black;
     text-align: left;
     margin: 1em 0;
@@ -287,6 +308,7 @@ nav {
 }
 
 footer {
+  font-weight:bold;
   text-align: center;
   padding: 0 0 70px 0;
   width: 90%;
@@ -301,6 +323,12 @@ footer {
     display: inline;
     margin-right: 7%;
     margin-left: 2%;
+
+    @media only screen and (max-width: 768px) {
+      .icon-label{
+        display:none;
+      }
+    }
 
     &:hover {
       color: black;
@@ -324,5 +352,33 @@ footer {
         color: black;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .go-to{
+    display:block;
+    border-top:1px solid #999999;
+    position:relative;
+    width:75%;
+    height: auto;
+    margin-left:10%;
+    bottom: 50px;
+    }
+    
+    .fa-arrow-up{
+    background-color: #dd6b4d;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    left: 50%;
+    bottom: -18px;
+    text-align: center;
+    padding-left: 5px;
+    border-right-width: 5px;
+    padding-right: 5px;
   }
 }

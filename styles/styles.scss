@@ -420,6 +420,15 @@ aside {
     max-width: 30%;
     margin: 0 0 0 1%;
 
+    @media only screen and (max-width: 768px) {
+        aside { 
+         float: initial;
+         max-width: 80%;
+         margin: auto;
+       }
+       }
+       
+
     .aside-image {
         width: 180px;
         height: 180px;
@@ -549,5 +558,37 @@ footer {
                 color: black;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .go-to{
+      display:block;
+      border-top:1px solid #999999;
+      position:relative;
+      width:75%;
+      height: auto;
+      margin-left:10%;
+      bottom: 50px;
+      }
+      
+      .fa-arrow-up{
+      background-color: #dd6b4d;
+      color: white;
+      position: absolute;
+      font-size: 25px;
+      border-radius: 20px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      left: 50%;
+      bottom: -18px;
+      text-align: center;
+      padding-left: 5px;
+      border-right-width: 5px;
+      padding-right: 5px;
+    }
+  
+    .icon-label{
+      display:none;
     }
 }
