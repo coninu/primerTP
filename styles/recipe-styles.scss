@@ -224,6 +224,11 @@ nav {
   color: white;
 }
 
+.article-image {
+  border-radius: 10%;
+  width: 100%;
+}
+
 .epigraph {
   width: 100%;
   display: flex;
@@ -236,7 +241,6 @@ nav {
 
     p {
       color: $grey;
-      font-weight: bold;
       font-size: 12px;
     }
   }
@@ -246,14 +250,12 @@ nav {
   font-size: 12px;
   padding: 0 0 18px 0;
   color: $grey;
-  font-weight: bold;
   margin: 0 3em;
 }
 
 .recipe {
   h1 {
     font-size: 2em;
-    font-weight: bold;
     color: black;
     text-align: left;
     margin: 1em 0;
@@ -268,7 +270,6 @@ nav {
 
     .quote-text {
       color: black;
-      font-weight: bold;
       font-size: 15px;
       line-height: 1em;
       margin: 0 0 2em 0;
@@ -276,46 +277,50 @@ nav {
 
     .author {
       color: $grey;
-      font-weight: bold;
     }
   }
 
   .recipe-steps {
     color: $grey;
-    font-weight: bold;
     font-size: 14px;
   }
 }
 
-.footer-container {
-  width: 80%;
-  max-width: 1200px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
 footer {
   text-align: center;
+  padding: 0 0 70px 0;
+  width: 90%;
+  margin: 0 auto;
+}
 
-  .social-media-footer {
-    li {
-      display: inline;
-      margin-right: 7%;
-      margin-left: 2%;
+.social-media-footer {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4dfe0;
+
+  li {
+    display: inline;
+    margin-right: 7%;
+    margin-left: 2%;
+
+    &:hover {
+      color: black;
     }
+  }
 
-    i {
-      color: $grey;
-    }
+  i {
+    color: $grey;
+    margin-right: 10px;
+  }
 
-    a {
-      text-decoration: none;
-      color: $grey;
-      font-size: 12px;
-      font-weight: bold;
+  a {
+    text-decoration: none;
+    color: $grey;
+    font-size: 12px;
 
-      &:hover {
+    &:hover {
+      color: black;
+
+      i {
         color: black;
       }
     }
