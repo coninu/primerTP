@@ -133,18 +133,22 @@ nav ul li a:hover {
 .first-recipe .hover-info {
   position: relative;
 }
+.first-recipe .hover-info:hover .img-1-details {
+  top: 58%;
+  opacity: 1;
+}
 .first-recipe img {
   width: 100%;
 }
 .first-recipe .img-1-details {
-  display: none;
   position: absolute;
-  bottom: 22%;
-  right: 3%;
-  left: 0%;
   background-color: rgba(239, 4, 4, 0.4);
   color: white;
   padding: 20px;
+  transition: all 0.5s ease-in-out;
+  top: 99%;
+  height: 150px;
+  opacity: 0;
 }
 @media only screen and (max-width: 768px) {
   .first-recipe .img-1-details {
@@ -160,9 +164,6 @@ nav ul li a:hover {
   padding-right: 10px;
   margin-right: 5px;
 }
-.first-recipe:hover .img-1-details {
-  display: block;
-}
 
 .second-recipe {
   width: 50%;
@@ -172,18 +173,22 @@ nav ul li a:hover {
 .second-recipe .hover-info {
   position: relative;
 }
+.second-recipe .hover-info:hover .img-2-details {
+  top: 58%;
+  opacity: 1;
+}
 .second-recipe img {
   width: 100%;
 }
 .second-recipe .img-2-details {
-  display: none;
   position: absolute;
-  bottom: 22%;
-  right: 3%;
-  left: 0%;
   background-color: rgba(239, 4, 4, 0.4);
   color: white;
   padding: 20px;
+  transition: all 0.5s ease-in-out;
+  top: 99%;
+  height: 150px;
+  opacity: 0;
 }
 .second-recipe .img-2-details .info {
   font-size: 10px;
@@ -194,9 +199,6 @@ nav ul li a:hover {
   padding-right: 10px;
   margin-right: 5px;
 }
-.second-recipe:hover .img-2-details {
-  display: block;
-}
 
 .third-recipe {
   width: 50%;
@@ -206,18 +208,22 @@ nav ul li a:hover {
 .third-recipe .hover-info {
   position: relative;
 }
+.third-recipe .hover-info:hover .img-3-details {
+  top: 58%;
+  opacity: 1;
+}
 .third-recipe img {
   width: 100%;
 }
 .third-recipe .img-3-details {
-  display: none;
   position: absolute;
-  bottom: 22%;
-  right: 3%;
-  left: 0%;
   background-color: rgba(239, 4, 4, 0.4);
   color: white;
   padding: 20px;
+  transition: all 0.5s ease-in-out;
+  top: 99%;
+  height: 150px;
+  opacity: 0;
 }
 .third-recipe .img-3-details .info {
   font-size: 10px;
@@ -228,9 +234,6 @@ nav ul li a:hover {
   padding-right: 10px;
   margin-right: 5px;
 }
-.third-recipe:hover .img-3-details {
-  display: block;
-}
 
 .fourth-recipe {
   width: 50%;
@@ -240,18 +243,22 @@ nav ul li a:hover {
 .fourth-recipe .hover-info {
   position: relative;
 }
+.fourth-recipe .hover-info:hover .img-4-details {
+  top: 58%;
+  opacity: 1;
+}
 .fourth-recipe img {
   width: 100%;
 }
 .fourth-recipe .img-4-details {
-  display: none;
   position: absolute;
-  bottom: 22%;
-  right: 3%;
-  left: 0%;
   background-color: rgba(239, 4, 4, 0.4);
   color: white;
   padding: 20px;
+  transition: all 0.5s ease-in-out;
+  top: 99%;
+  height: 150px;
+  opacity: 0;
 }
 .fourth-recipe .img-4-details .info {
   font-size: 10px;
@@ -261,9 +268,6 @@ nav ul li a:hover {
   border-right: solid 1px white;
   padding-right: 10px;
   margin-right: 5px;
-}
-.fourth-recipe:hover .img-4-details {
-  display: block;
 }
 
 .container {
