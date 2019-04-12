@@ -481,6 +481,10 @@ nav ul li a:hover {
   }
 }
 
+.video {
+  width: 67%;
+  display: inline-block;
+}
 @media only screen and (max-width: 768px) {
   .video {
     display: none;
@@ -490,8 +494,9 @@ nav ul li a:hover {
 .epigraph {
   color: #9b9089;
   font-size: 12px;
-  display: inline-block;
-  padding-bottom: 5px;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 45px;
 }
 
 aside {
@@ -508,7 +513,6 @@ aside .aside-image {
 }
 aside h3 {
   color: black;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 3px;
 }
@@ -518,14 +522,12 @@ aside .about-me-info {
   width: 90%;
   font-size: 14px;
   line-height: 14px;
-  font-weight: bold;
   text-align: center;
 }
 aside .pink-button {
   background-color: #ffdce2;
   display: block;
   font-size: 12px;
-  font-weight: bold;
   color: black;
   line-height: 19px;
   text-align: center;
@@ -562,11 +564,9 @@ aside .pink-button {
   font-size: 12px;
   padding: 0 0 18px 0;
   color: #9b9089;
-  font-weight: bold;
 }
 .posts .text-recipe h3 {
   color: black;
-  font-weight: bold;
   font-size: 18px;
 }
 .posts .text-recipe p {
@@ -578,7 +578,6 @@ aside .pink-button {
 .posts .text-recipe .read-more {
   background-color: #ffdce2;
   font-size: 12px;
-  font-weight: bold;
   color: black;
   line-height: 19px;
   text-align: center;
@@ -588,23 +587,33 @@ aside .pink-button {
 
 footer {
   text-align: center;
-  padding-top: 5%;
+  padding: 0 0 70px 0;
 }
 
+.social-media-footer {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e4dfe0;
+}
 .social-media-footer li {
   display: inline;
   margin-right: 7%;
   margin-left: 2%;
 }
+.social-media-footer li:hover {
+  color: black;
+}
 .social-media-footer i {
   color: #9b9089;
+  margin-right: 10px;
 }
 .social-media-footer a {
   text-decoration: none;
   color: #9b9089;
   font-size: 12px;
-  font-weight: bold;
 }
 .social-media-footer a:hover {
+  color: black;
+}
+.social-media-footer a:hover i {
   color: black;
 }
