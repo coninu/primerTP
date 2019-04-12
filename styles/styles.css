@@ -134,7 +134,7 @@ nav ul li a:hover {
   position: relative;
 }
 .first-recipe .hover-info:hover .img-1-details {
-  top: 58%;
+  bottom: 1%;
   opacity: 1;
 }
 .first-recipe img {
@@ -146,7 +146,7 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
   transition: all 0.5s ease-in-out;
-  top: 99%;
+  bottom: 50%;
   height: 150px;
   opacity: 0;
 }
@@ -174,7 +174,7 @@ nav ul li a:hover {
   position: relative;
 }
 .second-recipe .hover-info:hover .img-2-details {
-  top: 58%;
+  bottom: 1%;
   opacity: 1;
 }
 .second-recipe img {
@@ -186,7 +186,7 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
   transition: all 0.5s ease-in-out;
-  top: 99%;
+  bottom: 50%;
   height: 150px;
   opacity: 0;
 }
@@ -209,7 +209,7 @@ nav ul li a:hover {
   position: relative;
 }
 .third-recipe .hover-info:hover .img-3-details {
-  top: 58%;
+  bottom: 1%;
   opacity: 1;
 }
 .third-recipe img {
@@ -221,7 +221,7 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
   transition: all 0.5s ease-in-out;
-  top: 99%;
+  bottom: 50%;
   height: 150px;
   opacity: 0;
 }
@@ -244,7 +244,7 @@ nav ul li a:hover {
   position: relative;
 }
 .fourth-recipe .hover-info:hover .img-4-details {
-  top: 58%;
+  bottom: 1%;
   opacity: 1;
 }
 .fourth-recipe img {
@@ -256,7 +256,7 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
   transition: all 0.5s ease-in-out;
-  top: 99%;
+  bottom: 50%;
   height: 150px;
   opacity: 0;
 }
