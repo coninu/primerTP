@@ -308,6 +308,12 @@ footer {
   padding-bottom: 30px;
   border-bottom: 1px solid #e4dfe0;
 }
+
+@media only screen and (max-width: 768px) {
+  .social-media-footer{
+  border-bottom:none;}
+}
+
 .social-media-footer li {
   display: inline;
   margin-right: 7%;

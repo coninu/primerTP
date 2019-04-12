@@ -330,6 +330,9 @@ footer {
 .social-media-footer {
   padding-bottom: 30px;
   border-bottom: 1px solid #e4dfe0;
+  @media only screen and (max-width: 768px) {
+    border-bottom:none;
+  }
 
   li {
     display: inline;
