@@ -411,7 +411,6 @@ nav {
     }
 }
 
-//* FIN PARTE MARINA *//
 
 .epigraph {
     color: $grey;
@@ -419,6 +418,9 @@ nav {
     display: block;
     padding-bottom: 10px;
     margin-bottom: 45px;
+    @media only screen and (max-width: 768px) {
+        display:none;
+    }
 }
 
 aside {
@@ -427,12 +429,12 @@ aside {
     margin: 0 0 0 1%;
 
     @media only screen and (max-width: 768px) {
-        aside { 
+        
          float: initial;
          max-width: 80%;
          margin: auto;
        }
-       }
+       
        
 
     .aside-image {
@@ -497,9 +499,7 @@ aside {
     .text-recipe {
         width: 100%;
         margin: 0 0 0 25px;
-        @media only screen and (max-width: 768px) {
-                padding-top:10px;
-              }
+       
             
 
         .top-line {

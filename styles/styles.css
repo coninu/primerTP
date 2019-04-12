@@ -603,11 +603,6 @@ aside .pink-button {
   margin: 0 0 0 25px;
 }
 
-@media only screen and (max-width: 768px) {
-  .posts .text-recipe{
-    padding-top:10px;
-  }
-  }
 
 .posts .text-recipe .top-line {
   display: flex;
