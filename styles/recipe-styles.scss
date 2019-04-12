@@ -180,8 +180,9 @@ nav {
 
 //* PARTE DE MARINA *//
 @media only screen and (max-width: 768px) {
-  .container{
-  width:70%;}
+  .container {
+    width: 70%;
+  }
 }
 
 .social-bar {
@@ -191,19 +192,20 @@ nav {
   transform: translate(-150%, 10%);
 
   @media only screen and (max-width: 768px) {
-    .social-bar{
+    .social-bar {
       display: flex;
       flex-direction: row;
       position: initial;
-      transform: none; }
+      transform: none;
     }
+  }
 
-    .social-bar .icons i{
-      padding: 2px;
-    }
+  .social-bar .icons i {
+    padding: 2px;
+  }
 
-  .icons{
-    margin:auto;
+  .icons {
+    margin: auto;
   }
 
   .icons i {
@@ -256,7 +258,7 @@ nav {
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    .epigraph{
+    .epigraph {
       display: inline-flex;
     }
   }
@@ -280,7 +282,7 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-  .social-post{
+  .social-post {
     margin: 0 1em;
   }
 }
@@ -288,7 +290,7 @@ nav {
 .recipe {
   h1 {
     font-size: 2em;
-    font-weight:bold;
+    font-weight: bold;
     color: black;
     text-align: left;
     margin: 1em 0;
@@ -320,7 +322,6 @@ nav {
 }
 
 footer {
-  font-weight:bold;
   text-align: center;
   padding: 0 0 70px 0;
   width: 90%;
@@ -331,14 +332,18 @@ footer {
   padding-bottom: 30px;
   border-bottom: 1px solid #e4dfe0;
 
+  @media only screen and (max-width: 768px) {
+    border-bottom: none;
+  }
+
   li {
     display: inline;
     margin-right: 7%;
     margin-left: 2%;
 
     @media only screen and (max-width: 768px) {
-      .icon-label{
-        display:none;
+      .icon-label {
+        display: none;
       }
     }
 
@@ -368,17 +373,17 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .go-to{
-    display:block;
-    border-top:1px solid #999999;
-    position:relative;
-    width:75%;
+  .go-to {
+    display: block;
+    border-top: 1px solid #999999;
+    position: relative;
+    width: 75%;
     height: auto;
-    margin-left:10%;
+    margin-left: 10%;
     bottom: 50px;
-    }
-    
-    .fa-arrow-up{
+  }
+
+  .fa-arrow-up {
     background-color: #dd6b4d;
     color: white;
     position: absolute;

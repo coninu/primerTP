@@ -494,10 +494,11 @@ nav ul li a:hover {
   }
 }
 
-.video {
+.video-and-posts {
   width: 67%;
   display: inline-block;
 }
+
 @media only screen and (max-width: 768px) {
   .video {
     display: none;
@@ -517,15 +518,13 @@ aside {
   max-width: 30%;
   margin: 0 0 0 1%;
 }
-
 @media only screen and (max-width: 768px) {
- aside { 
-  float: initial;
-  max-width: 80%;
-  margin: auto;
+  aside aside {
+    float: initial;
+    max-width: 80%;
+    margin: auto;
+  }
 }
-}
-
 aside .aside-image {
   width: 180px;
   height: 180px;
@@ -556,7 +555,6 @@ aside .pink-button {
   padding: 8px 0;
   text-transform: uppercase;
 }
-
 
 .half-container {
   width: 60%;
@@ -617,12 +615,16 @@ footer {
   padding-bottom: 30px;
   border-bottom: 1px solid #e4dfe0;
 }
+@media only screen and (max-width: 768px) {
+  .social-media-footer {
+    border-bottom: none;
+  }
+}
 .social-media-footer li {
   display: inline;
   margin-right: 7%;
   margin-left: 2%;
 }
-
 .social-media-footer li:hover {
   color: black;
 }
@@ -643,17 +645,17 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .go-to{
-    display:block;
-    border-top:1px solid #999999;
-    position:relative;
-    width:75%;
+  .go-to {
+    display: block;
+    border-top: 1px solid #999999;
+    position: relative;
+    width: 75%;
     height: auto;
-    margin-left:10%;
+    margin-left: 10%;
     bottom: 50px;
-    }
-    
-    .fa-arrow-up{
+  }
+
+  .fa-arrow-up {
     background-color: #dd6b4d;
     color: white;
     position: absolute;
@@ -669,8 +671,7 @@ footer {
     padding-right: 5px;
   }
 
-  .icon-label{
-    display:none;
+  .icon-label {
+    display: none;
   }
-  
 }
