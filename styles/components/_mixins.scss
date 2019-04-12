@@ -23,14 +23,16 @@
 }
 
 @mixin imagedetails {
-    display: none;
     position: absolute;
-    bottom: 22%;
-    right: 3%;
-    left: 0%;
     background-color: rgba(239, 4, 4, 0.4);
     color: white;
     padding: 20px;
+    transition: all 0.5s ease-in-out;
+    bottom: 50%;
+    height: 150px;
+    opacity: 0;
+    left: 0%;
+    right: 0%;
 }
 
 @mixin secondary-menu-img {
