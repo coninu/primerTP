@@ -239,6 +239,13 @@ article{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px) {
+  .epigraph{
+    display: inline-flex;
+  }
+}
+
 .epigraph .epigraph-text {
   display: flex;
   flex-wrap: wrap;
@@ -254,6 +261,13 @@ article{
   color: #9b9089;
   margin: 0 3em;
 }
+
+@media only screen and (max-width: 768px) {
+  .social-post{
+    margin: 0 1em;
+  }
+}
+
 
 .recipe h1 {
   font-size: 2em;
