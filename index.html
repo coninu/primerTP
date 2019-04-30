@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Home | Mi Blog de Cocina</title>
+    <link rel="stylesheet" href="tp-results/result.css">
+	<script src="tp-results/result.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
+        <!--la ruta de linkeo no es correcta-->
         <a href="../primerTP/index.html" class="title">Mi Blog de Cocina</a>
         <nav class="mobile-menu">
             <ul>
@@ -36,6 +39,7 @@
         </nav>
     </header>
     <section class="carrousel">
+        <!--los elementos dentro de carousel no deberían tener clases disntintas si les vamos a asignar los mismos estilos-->
         <div class="first-recipe">
             <a href="../primerTP/recipe.html">
                 <div class="hover-info">
@@ -83,6 +87,7 @@
     </section>
     <div class="container">
         <section class="secondary-menu">
+            <!--acá sucede lo mismo que en carousel, si los elementos compartern los mismos estilos, deberíamos agruparlos con una misma clase-->
             <div class="meals">
                 <a href="#" class="meals-hover">
                     <img class="meals-img" src="images/platos.jpeg" />
@@ -104,56 +109,57 @@
         </section>
         <section class="video-and-posts">
             <iframe width="100%" height="490" src="https://www.youtube.com/embed/eeeTvatu6fk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen class="video"></iframe>
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                class="video"></iframe>
             <p class="epigraph">20 de Abril | Amamos a este gato</p>
             <div class="posts">
-                
+
                 <!--div para la imagen-->
                 <div class="image-recipe">
                     <img src="images/nota1.JPG">
                 </div>
+                <!--los divs con clase post-1 y post-2 no estarían cumpliendo ninguna función-->
                 <div class="post-1">
-                <div class="text-recipe">
-                    <div class="top-line">
-                        <p>By Maria | Mayo 19, 2017</p>
-                        <div class="social-post">
-                            <i class="far fa-heart"> </i>
-                            <span>20</span>
-                            <i class="far fa-comment"> </i>
-                            <span>10</span>
-                            <i class="fas fa-share-alt"></i>
+                    <div class="text-recipe">
+                        <div class="top-line">
+                            <p>By Maria | Mayo 19, 2017</p>
+                            <div class="social-post">
+                                <i class="far fa-heart"> </i>
+                                <span>20</span>
+                                <i class="far fa-comment"> </i>
+                                <span>10</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
                         </div>
+                        <h3>Delicias Dulces</h3>
+                        <p>En esta recetan van a poder ver una receta muy simple, sana y muy rica.</p>
+                        <a href="#" class="read-more">Leer Más</a>
                     </div>
-                    <h3>Delicias Dulces</h3>
-                    <p>En esta recetan van a poder ver una receta muy simple, sana y muy rica.</p>
-                    <a href="#" class="read-more">Leer Más</a>
                 </div>
-               </div>
             </div>
             <div class="posts">
-                
+
                 <!--div para la imagen-->
                 <div class="image-recipe">
                     <img src="images/nota2.JPG">
                 </div>
                 <div class="post2">
-                <div class="text-recipe">
-                    <div class="top-line">
-                        <p>By Maria | Mayo 19, 2017</p>
-                        <div class="social-post">
-                            <i class="far fa-heart"> </i>
-                            <span>20</span>
-                            <i class="far fa-comment"> </i>
-                            <span>10</span>
-                            <i class="fas fa-share-alt"></i>
+                    <div class="text-recipe">
+                        <div class="top-line">
+                            <p>By Maria | Mayo 19, 2017</p>
+                            <div class="social-post">
+                                <i class="far fa-heart"> </i>
+                                <span>20</span>
+                                <i class="far fa-comment"> </i>
+                                <span>10</span>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
                         </div>
+                        <h3>Comidas Simples</h3>
+                        <p>En esta recetan van a poder ver una receta muy simple, sana y muy rica.</p>
+                        <a href="#" class="read-more">Leer Más</a>
                     </div>
-                    <h3>Comidas Simples</h3>
-                    <p>En esta recetan van a poder ver una receta muy simple, sana y muy rica.</p>
-                    <a href="#" class="read-more">Leer Más</a>
                 </div>
-            </div>
             </div>
         </section>
         <!--Aside -->
@@ -172,42 +178,44 @@
     <footer class="container">
         <div class="social-media-footer">
             <ul>
-                    <li>
-                            <a href="https://www.facebook.com/paulinacocina.net/">
-                                <i class="fab fa-facebook-f"></i>
-                                 <span class="icon-label"> FACEBOOK </span>
-                            </a>
-                        </li>
-                        <li><a href="https://twitter.com/paulina_cocina">
-                            <i class="fab fa-twitter"></i>
-                            <span class="icon-label">TWITTER </span>
-                        </a>
-                        </li>
-                        <li>
-                            <a href="https://www.paulinacocina.net/">
-                                <i class="fab fa-google-plus-g"></i>
-                                <span class="icon-label">GOOGLE + </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com">
-                                <i class="fab fa-linkedin"></i>
-                                <span class="icon-label">LINKEDIN </span>
-                            </a>
-                        </li>
-                        <li><a href="https://www.instagram.com/paulinacocina/">
-                            <i class="fab fa-instagram"></i>
-                            <span class="icon-label">INSTAGRAM </span>
-                        </a>
-                        </li>
-                        <li><a href="https://www.youtube.com/user/paulinacocina">
-                            <i class="fab fa-youtube"></i>
-                            <span class="icon-label">YOUTUBE </span>
-                        </a>
-                        </li>
+                <li>
+                    <a href="https://www.facebook.com/paulinacocina.net/">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="icon-label"> FACEBOOK </span>
+                    </a>
+                </li>
+                <li><a href="https://twitter.com/paulina_cocina">
+                        <i class="fab fa-twitter"></i>
+                        <span class="icon-label">TWITTER </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.paulinacocina.net/">
+                        <i class="fab fa-google-plus-g"></i>
+                        <span class="icon-label">GOOGLE + </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="icon-label">LINKEDIN </span>
+                    </a>
+                </li>
+                <li><a href="https://www.instagram.com/paulinacocina/">
+                        <i class="fab fa-instagram"></i>
+                        <span class="icon-label">INSTAGRAM </span>
+                    </a>
+                </li>
+                <li><a href="https://www.youtube.com/user/paulinacocina">
+                        <i class="fab fa-youtube"></i>
+                        <span class="icon-label">YOUTUBE </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
+    <!--no deberían haber más elemtentos debajo del footer-->
+    <!--este div no está oculto en la versión desktop-->
     <div class="go-to">
         <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>

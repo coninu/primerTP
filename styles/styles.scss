@@ -139,7 +139,7 @@ nav {
         }
     }
 }
-
+/*se repite el mismo bloque de código cuatro veces, se debería utilizar una misma clase para los cuatro elementos */
 .first-recipe {
     @include recipeconfig (15px, 0);
 
@@ -294,7 +294,7 @@ nav {
         width: 80%;
         margin: 0 auto;
     }
-
+    /*se vuelve a repetir código tres veces*/
     .meals {
         position: relative;
         width: 33%;
@@ -302,7 +302,7 @@ nav {
         @media only screen and (max-width: 768px) {
             width: 100%;
         }
-
+        /*el hover no funciona correctamente*/
         .meals-hover:hover .meals-img {
             display: none;
 
@@ -314,7 +314,7 @@ nav {
 
     img {
         @include secondary-menu-img;
-
+        /*si el elemento no se modifica en las media queries, es redundante volver a aplicarles las mismas propiedades que ya tiene */
         @media only screen and (max-width: 768px) {
             @include secondary-menu-img;
         }
